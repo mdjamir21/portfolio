@@ -1,0 +1,237 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+body
+{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    min-width: 750px;
+    min-height: 100vh;
+    background-color: #fdfdfd;
+    background-image: url(/portfolio/cool-background.png);
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.topcontainer
+{
+    width:auto;
+    margin: 0 auto;
+
+}
+
+header
+{
+    background: #b7bbba;
+    width: auto;
+}
+
+header::after
+{
+    content: '';
+    display: table;
+    clear: both;
+    width: auto;
+}
+
+.logo
+{
+    float:left;
+   width: 300px;
+   height: 75px;
+   margin-left: 25px;
+
+
+}
+
+nav
+{
+    float:right;
+}
+
+
+nav ul 
+{
+ margin: 0;
+ padding: 0;
+
+ list-style: none;
+ padding-right: 10px;
+ 
+}
+
+nav li 
+{
+    display: inline-block;
+    margin-left: 5px;
+    padding-top: 27px;
+    padding-left: 0px;
+    padding-right: 2px;
+    position: relative;
+
+}
+
+nav a 
+{
+    color:#222;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+
+nav a:hover
+{
+color: white;
+}
+
+nav a::before
+{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+
+    bottom: -5%;
+    width: 0%;
+    position:absolute;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before
+{
+    width: 96%;
+
+}
+
+.button-container
+{
+    width: auto;
+    padding:30px;
+    border-radius: 10px;
+    justify-content:center;
+    justify-items: center;
+
+}
+
+
+button
+{
+    cursor: pointer;
+    font-size: 5rem;
+    height: 6rem;
+    border: none;
+    border-radius: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    outline: none;
+   
+
+
+}
+
+button:hover
+{
+    transform: scale(120%);
+    transition: transform 150ms ease-in-out 50ms;
+
+}
+
+.linkedin-button:hover
+{
+    color:#0077b5;
+}
+
+.instagram-button:hover
+{
+    color:#e95950 ;
+   
+}
+.tele-button:hover
+{
+    color: #229ED9;
+}
+
+.whatsapp-button:hover
+{
+    color: #25D366;
+}
+
+.git-button:hover
+{
+    color:#666666;
+}
+
+.lables a 
+{
+    font-size: 1px;
+}
+
+
+.button-container
+{
+    padding-top: 300px;
+    margin-top:200px;
+    display: flex;
+    padding-block: 50px;
+
+}
+
+
+.active
+{
+    color: white;
+    text-decoration: underline;
+    padding-bottom: 2px;
+    text-decoration-thickness: 4px;
+
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .button-container
+    {
+        margin: auto 30px;
+        margin-top:auto;
+        margin-bottom: auto;
+        padding-block: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    button
+{
+    cursor: pointer;
+    font-size: 12rem;
+    height: 13rem;
+    margin:40px;
+    padding: 10px;
+   
+
+
+}
+
+    
+    
+}
