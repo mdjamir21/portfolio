@@ -1,0 +1,176 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+body
+{
+    margin: 0;
+    background-image:url('cool-background.png');
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    min-width: 750px;
+
+}
+
+
+.topcontainer
+{
+    width:auto;
+    margin: 0 auto;
+
+}
+
+header
+{
+    background: #b7bbba;
+    width: auto;
+}
+
+header::after
+{
+    content: '';
+    display: table;
+    clear: both;
+    width: auto;
+}
+
+.logo
+{
+    float:left;
+   width: 300px;
+   height: 75px;
+   margin-left: 25px;
+
+
+}
+
+nav
+{
+    float:right;
+}
+
+
+nav ul 
+{
+ margin: 0;
+ padding: 0;
+
+ list-style: none;
+ padding-right: 10px;
+ 
+}
+
+nav li 
+{
+    display: inline-block;
+    margin-left: 5px;
+    padding-top: 27px;
+    padding-left: 0px;
+    padding-right: 2px;
+    position: relative;
+
+}
+
+nav a 
+{
+    color:#222;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav a:hover
+{
+color: white;
+}
+
+nav a::before
+{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+
+    bottom: -5%;
+    width: 0%;
+    position:absolute;
+    transition: all ease-in-out 300ms;
+
+}
+
+nav a:hover::before
+{
+    width: 96%;
+
+}
+
+
+.active
+{
+    color: white;
+    text-decoration: underline;
+    padding-bottom: 2px;
+    text-decoration-thickness: 4px;
+
+}
+
+
+
+.projects_container
+{
+    width: auto;
+    max-width: max-content;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+    justify-items: center;
+    justify-content: center;
+
+
+}
+
+.ayah
+{
+    width: 50rem;
+    
+}
+
+
+
+@media screen and (max-width:500px) {
+    .projects_container
+    {
+        
+    width: auto;
+    max-width: max-content;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+    justify-items: center;
+    justify-content: center;
+        
+    }
+    .ayah
+    {
+    width:30rem;    
+    }   
+
+    
+    
+}
